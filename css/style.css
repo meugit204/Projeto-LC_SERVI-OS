@@ -16,6 +16,11 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
 .w50 {
   width: 50%;
 }
@@ -42,6 +47,12 @@ header > .container > .logo {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 860px) {
+  .container > .menu ul {
+    display: none;
+  }
+}
+
 .menu ul li a {
   color: #16365e;
 }
@@ -53,16 +64,29 @@ header > .container > .logo {
 .baner-chamada > .container {
   padding: 30px;
   height: 400px;
-  background-image: url(/imagens/bg-topo.png);
+  background-image: url(../imagens/bg-topo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 900px) {
+  .baner-chamada > .container {
+    text-align: center;
+  }
+}
 .baner-chamada > .container > .titulo-chamada {
+  max-width: 800px;
   color: #fff;
   font-size: 30px;
   margin-top: 30px;
 }
+@media screen and (max-width: 580px) {
+  .baner-chamada > .container > .titulo-chamada {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+}
+
 .baner-chamada > .container > a {
   cursor: pointer;
   color: #16365e;
@@ -75,6 +99,13 @@ header > .container > .logo {
   border: none;
   text-transform: uppercase;
 }
+@media screen and (max-width: 400px) {
+  .baner-chamada > .container > a {
+    font-size: 17px;
+    padding: 7px 20px;
+  }
+}
+
 .baner-chamada > .container > a:hover {
   background-color: #16365e;
   color: #fff;
@@ -93,12 +124,31 @@ section > h2 {
   font-weight: bold;
   text-align: center;
 }
+@media screen and (max-width: 420px) {
+  section > h2 {
+    font-size: 20px;
+  }
+}
+
 .destaques {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 789px) {
+  .destaques {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .destaques > .box-info {
   width: 350px;
+  border: 5px solid #fff;
+}
+@media screen and (max-width: 490px) {
+  .destaques > .box-info {
+    width: 90%;
+  }
 }
 .destaques > .box-info > .circ {
   width: 80px;
@@ -120,7 +170,15 @@ section > h2 {
   background-color: #ffeee4;
   padding: 30px;
   border-radius: 9px;
-  height: 240px;
+  height: 300px;
+  -webkit-box-shadow: 4px 5px 4px -1px rgba(179, 179, 181, 1);
+  -moz-box-shadow: 4px 5px 4px -1px rgba(179, 179, 181, 1);
+  box-shadow: 4px 5px 4px -1px rgba(179, 179, 181, 1);
+}
+@media screen and (max-width: 490px) {
+  .box-info > .destaque-texto {
+    height: auto;
+  }
 }
 .box-info > .destaque-texto h3 {
   text-align: center;
@@ -141,11 +199,18 @@ section > .container > h2 {
   font-weight: bold;
   text-align: center;
 }
+@media screen and (max-width: 420px) {
+  section > .container > h2 {
+    font-size: 20px;
+  }
+}
 section > .container > p {
   font-size: 15px;
   color: #16365e;
   margin-top: 30px;
   text-align: left;
+  padding: 0 5px;
+  font-weight: normal;
 }
 
 /* Regiao */
@@ -156,6 +221,23 @@ section > .container > p {
   display: flex;
   padding: 0;
 }
+@media screen and (max-width: 789px) {
+  .regiao {
+    height: auto;
+  }
+  .regiao > .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .regiao-info,
+  .regiao-img {
+    width: 100%;
+  }
+  .regiao-info {
+    padding: 60px 0;
+  }
+}
+
 .regiao > .container > .regiao-info {
   background-color: #e98750;
   display: flex;
@@ -167,6 +249,11 @@ section > .container > p {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+}
+@media screen and (max-width: 420px) {
+  .regiao-info h2 {
+    font-size: 20px;
+  }
 }
 .regiao > .container > .regiao-img {
   background-color: #ffeee4;
@@ -186,10 +273,10 @@ section > .container > p {
   text-align: center;
   font-size: 15px;
   font-weight: normal;
-  padding: 10px 2px;
+  padding: 10px 5px;
 }
 .servicos > .container > a {
-  font-size: 30px;
+  font-size: 20px;
   color: #16365e;
   text-align: center;
   padding: 13px 30px;
@@ -199,6 +286,12 @@ section > .container > p {
   border-radius: 9px;
   cursor: pointer;
   margin-top: 30px;
+}
+@media screen and (max-width: 400px) {
+  .servicos > .container > a {
+    font-size: 17px;
+    padding: 10px 20px;
+  }
 }
 .servicos > .container > a:hover {
   background-color: #16365e;
@@ -214,8 +307,14 @@ footer {
 footer > .container {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 5px;
 }
+@media screen and (max-width: 850px) {
+  footer > .container {
+    flex-direction: column;
+  }
+}
+
 footer > .container h3 {
   font-size: 20px;
   font-weight: bold;
