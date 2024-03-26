@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.w50 {
+  width: 50%;
+}
+header {
+  width: 100%;
+  height: 86px;
+  background-color: #fff;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .container > .logo {
+  width: 248px;
+  height: 86px;
+}
+.container > .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+.container > .menu ul {
+  display: flex;
+  gap: 30px;
+}
+.menu ul li a {
+  color: #16365e;
+}
+.menu ul li:hover a {
+  color: #e98750;
+  transition: 1s;
+}
+/* Baner - chamada */
+.baner-chamada > .container {
+  padding: 30px;
+  height: 400px;
+  background-image: url(/imagens/bg-topo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.baner-chamada > .container > .titulo-chamada {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.baner-chamada > .container > a {
+  cursor: pointer;
+  color: #16365e;
+  padding: 10px 30px;
+  background-color: #e98750;
+  margin-top: 30px;
+  border-radius: 9px;
+  font-size: 20px;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+}
+.baner-chamada > .container > a:hover {
+  background-color: #16365e;
+  color: #fff;
+  transition: 1s;
+}
+
+/* Destaques */
+section {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+section > h2 {
+  color: #16365e;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.destaques {
+  display: flex;
+  justify-content: space-between;
+}
+.destaques > .box-info {
+  width: 350px;
+}
+.destaques > .box-info > .circ {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e98750;
+  margin: 10px auto;
+  position: relative;
+}
+.circ i {
+  color: #16365e;
+  font-size: 35px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.box-info > .destaque-texto {
+  background-color: #ffeee4;
+  padding: 30px;
+  border-radius: 9px;
+  height: 240px;
+}
+.box-info > .destaque-texto h3 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #16365e;
+}
+.box-info > .destaque-texto p {
+  text-align: center;
+  color: #16365e;
+  font-size: 15px;
+}
+
+/* section nossos serviços */
+section > .container > h2 {
+  color: #16365e;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+section > .container > p {
+  font-size: 15px;
+  color: #16365e;
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* Regiao */
+.regiao {
+  height: 300px;
+}
+.regiao > .container {
+  display: flex;
+  padding: 0;
+}
+.regiao > .container > .regiao-info {
+  background-color: #e98750;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regiao-info h2 {
+  color: #16365e;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.regiao > .container > .regiao-img {
+  background-color: #ffeee4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Serviços */
+.servicos > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.servicos > .container > p {
+  color: #16365e;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 10px 2px;
+}
+.servicos > .container > a {
+  font-size: 30px;
+  color: #16365e;
+  text-align: center;
+  padding: 13px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #e98750;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.servicos > .container > a:hover {
+  background-color: #16365e;
+  color: #fff;
+  transition: 1s;
+}
+/* Footer */
+footer {
+  background-color: #16365e;
+  padding: 40px 0px 0px px;
+  margin-top: 20px;
+}
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+footer > .container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding: 30px 0;
+}
+footer > .container > .contato p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+.nav-footer ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+footer > .container > .horario p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+footer > .direitos {
+  background-color: #0b1b2e;
+  padding: 10px 0;
+}
+footer > .direitos p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
