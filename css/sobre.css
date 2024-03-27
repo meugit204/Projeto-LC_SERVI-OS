@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+.w50 {
+  width: 50%;
+}
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+}
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .container > .logo {
+  width: 248px;
+  height: 60px;
+}
+.container > .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+.container > .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.container > .menu ul li {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 860px) {
+  .container > .menu ul {
+    display: none;
+  }
+}
+.menu ul li a {
+  color: #16365e;
+}
+.menu ul li:hover a {
+  color: #e98750;
+  transition: 1s;
+}
+/* menu mobile */
+.mobile {
+  display: none;
+  float: right;
+}
+@media screen and (max-width: 860px) {
+  .mobile {
+    display: block;
+  }
+}
+.mobile h3 {
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.mobile ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  top: 90px;
+  background-color: #16365e;
+  display: none;
+  text-align: center;
+}
+.mobile ul li {
+  padding: 10px 10px;
+}
+.mobile ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+}
+.btn-nav {
+  border: 1px solid #e98750;
+  padding: 4px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Baner - chamada */
+.baner-chamada > .container {
+  height: 400px;
+  background-image: url(../imagens/bg-topo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .baner-chamada > .container {
+    text-align: center;
+  }
+}
+
+.baner-chamada > .container > .titulo-chamada {
+  max-width: 800px;
+  color: #fff;
+  font-size: 60px;
+  margin-top: 30px;
+  padding: 30px;
+}
+@media screen and (max-width: 557px) {
+  .baner-chamada > .container > .titulo-chamada {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+}
+
+/* Sobre */
+.sobre > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobre > .container h2 {
+  color: #16365e;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0;
+}
+.sobre > .container p {
+  color: #16365e;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 10px 5px;
+}
+.sobre > .container a {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 13px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #e98750;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.sobre > .container a:hover {
+  background-color: #16365e;
+  color: #fff;
+  transition: 1s;
+}
+
+/* Footer */
+footer {
+  background-color: #16365e;
+  padding: 40px 0px 0px px;
+  margin-top: 60px;
+}
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px;
+}
+@media screen and (max-width: 850px) {
+  footer > .container {
+    flex-direction: column;
+  }
+}
+
+footer > .container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding: 30px 0;
+}
+footer > .container > .contato p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+.nav-footer ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+footer > .container > .horario p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 25px;
+}
+footer > .direitos {
+  background-color: #0b1b2e;
+  padding: 10px 0;
+}
+footer > .direitos p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}

@@ -107,8 +107,8 @@ header > .container > .logo {
   border-radius: 10px;
   display: inline-block;
 }
-/* Baner - chamada */
 
+/* Baner - chamada */
 .baner-chamada > .container {
   height: 400px;
   background-image: url(../imagens/bg-topo.png);
