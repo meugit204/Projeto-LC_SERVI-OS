@@ -26,10 +26,9 @@ body {
 }
 header {
   width: 100%;
-  height: 86px;
+  height: 60px;
   background-color: #fff;
 }
-
 header > .container {
   display: flex;
   justify-content: space-between;
@@ -37,7 +36,7 @@ header > .container {
 }
 header > .container > .logo {
   width: 248px;
-  height: 86px;
+  height: 60px;
 }
 .container > .logo img {
   width: 100%;
@@ -45,14 +44,18 @@ header > .container > .logo {
 }
 .container > .menu ul {
   display: flex;
+  align-items: center;
   gap: 30px;
+}
+.container > .menu ul li {
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 860px) {
   .container > .menu ul {
     display: none;
   }
 }
-
 .menu ul li a {
   color: #16365e;
 }
@@ -61,8 +64,8 @@ header > .container > .logo {
   transition: 1s;
 }
 /* Baner - chamada */
+
 .baner-chamada > .container {
-  padding: 30px;
   height: 400px;
   background-image: url(../imagens/bg-topo.png);
   background-size: cover;
@@ -74,11 +77,13 @@ header > .container > .logo {
     text-align: center;
   }
 }
+
 .baner-chamada > .container > .titulo-chamada {
   max-width: 800px;
   color: #fff;
   font-size: 30px;
   margin-top: 30px;
+  padding: 30px;
 }
 @media screen and (max-width: 580px) {
   .baner-chamada > .container > .titulo-chamada {
@@ -89,10 +94,10 @@ header > .container > .logo {
 
 .baner-chamada > .container > a {
   cursor: pointer;
-  color: #16365e;
+  color: #fff;
   padding: 10px 30px;
   background-color: #e98750;
-  margin-top: 30px;
+  margin: 30px;
   border-radius: 9px;
   font-size: 20px;
   display: inline-block;
@@ -167,7 +172,7 @@ section > h2 {
   left: 50%;
 }
 .box-info > .destaque-texto {
-  background-color: #ffeee4;
+  background-color: #16365e;
   padding: 30px;
   border-radius: 9px;
   height: 300px;
@@ -184,12 +189,13 @@ section > h2 {
   text-align: center;
   padding: 10px 0;
   font-size: 20px;
-  color: #16365e;
+  color: #fff;
 }
 .box-info > .destaque-texto p {
   text-align: center;
-  color: #16365e;
+  color: #fff;
   font-size: 15px;
+  line-height: 25px;
 }
 
 /* section nossos serviços */
@@ -277,7 +283,7 @@ section > .container > p {
 }
 .servicos > .container > a {
   font-size: 20px;
-  color: #16365e;
+  color: #fff;
   text-align: center;
   padding: 13px 30px;
   font-weight: bold;
@@ -325,16 +331,21 @@ footer > .container > .contato p {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
+  text-transform: capitalize;
+  line-height: 25px;
 }
 .nav-footer ul li a {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
+  line-height: 35px;
+  text-transform: capitalize;
 }
 footer > .container > .horario p {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
+  line-height: 25px;
 }
 footer > .direitos {
   background-color: #0b1b2e;
