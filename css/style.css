@@ -63,6 +63,50 @@ header > .container > .logo {
   color: #e98750;
   transition: 1s;
 }
+/* menu mobile */
+.mobile {
+  display: none;
+  float: right;
+}
+@media screen and (max-width: 860px) {
+  .mobile {
+    display: block;
+  }
+}
+.mobile h3 {
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.mobile ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  top: 90px;
+  background-color: #16365e;
+  display: none;
+  text-align: center;
+}
+.mobile ul li {
+  padding: 10px 10px;
+}
+.mobile ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+}
+.btn-nav {
+  border: 1px solid #e98750;
+  padding: 4px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
 /* Baner - chamada */
 
 .baner-chamada > .container {
@@ -97,7 +141,7 @@ header > .container > .logo {
   color: #fff;
   padding: 10px 30px;
   background-color: #e98750;
-  margin: 30px;
+  margin: 0px 30px;
   border-radius: 9px;
   font-size: 20px;
   display: inline-block;
