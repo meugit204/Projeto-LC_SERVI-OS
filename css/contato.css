@@ -111,7 +111,7 @@ header > .container > .logo {
 /* Baner - chamada */
 .baner-chamada > .container {
   height: 400px;
-  background-image: url(../imagens/bg-sobre.png);
+  background-image: url(../imagens/bg-contato.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,6 +131,7 @@ header > .container > .logo {
   font-size: 60px;
   margin-top: 30px;
   padding: 30px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 557px) {
   .baner-chamada > .container > .titulo-chamada {
@@ -139,108 +140,72 @@ header > .container > .logo {
   }
 }
 
-/* Sobre */
-.sobre > .container {
+/* Contato */
+.contato > .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
-.sobre > .container h2 {
-  color: #16365e;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  padding: 30px 0;
+@media screen and (max-width: 850px) {
+  .contato > .container {
+    flex-direction: column;
+  }
 }
-.sobre > .container p {
-  color: #16365e;
-  font-size: 15px;
-  font-weight: normal;
-  padding: 10px 5px;
-  line-height: 25px;
+@media screen and (max-width: 850px) {
+  .maps {
+    width: 100%;
+  }
 }
 
-/* Misao */
-.misao > .container {
-  background-color: #16365e;
-  padding: 30px 5px;
-  margin-top: 40px;
-  border-radius: 9px;
+.info-contato {
+  background-color: #e98750;
+  padding: 60px 30px;
 }
-.misao > .container h2 {
+@media screen and (max-width: 850px) {
+  .info-contato {
+    width: 100%;
+    height: 400px;
+  }
+}
+.box-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.box-info i {
+  font-size: 25px;
   color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 0;
-  text-transform: uppercase;
 }
-.misao > .container p {
+.box-info p {
   color: #fff;
-  font-size: 15px;
-  font-weight: normal;
-  padding: 10px 5px;
-  line-height: 25px;
+  font-size: 16px;
 }
+.icons-sociais {
+  display: flex;
 
-/* Orcamento */
-.orcamento > .container {
-  padding: 30px 5px;
-  margin-top: 40px;
-  border-radius: 9px;
+  gap: 30px;
 }
-.orcamento > .container h2 {
-  color: #000;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: left;
-  padding: 10px 0;
-  text-transform: uppercase;
+.icons-sociais > .circ {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 80px 0;
+  position: relative;
 }
-.orcamento > .container p {
-  color: #000;
-  font-size: 15px;
-  font-weight: normal;
-  padding: 10px 5px;
-  line-height: 25px;
-}
-.orcamento > .container a {
+.icons-sociais > .circ i {
+  color: #fff;
   font-size: 20px;
-  border: 1px solid #16365e;
-  padding: 10px 20px;
-  border-radius: 9px;
-  color: #e98750;
-  margin: 20px 5px;
-  display: inline-block;
-  cursor: pointer;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
-@media screen and (max-width: 415px) {
-  .orcamento > .container a {
-    font-size: 18px;
-    padding: 15px 20px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .orcamento > .container a {
-    font-size: 16px;
-    padding: 15px 20px;
-  }
-}
-@media screen and (max-width: 339px) {
-  .orcamento > .container a {
-    font-size: 15px;
-    padding: 15px 5px;
-  }
-}
-.orcamento > .container a:hover {
-  border: 1px solid #16365e;
-  transition: 1s;
-}
+
 /* Footer */
 footer {
   background-color: #16365e;
   padding: 40px 0px 0px px;
-  margin-top: 60px;
 }
 footer > .container {
   display: flex;
@@ -252,6 +217,7 @@ footer > .container {
     flex-direction: column;
   }
 }
+
 footer > .container h3 {
   font-size: 20px;
   font-weight: bold;
