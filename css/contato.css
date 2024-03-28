@@ -111,7 +111,7 @@ header > .container > .logo {
 /* Baner - chamada */
 .baner-chamada > .container {
   height: 400px;
-  background-image: url(../imagens/bg-contato.png);
+  background-image: url(../imagens/bg-contato.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,6 +144,7 @@ header > .container > .logo {
 .contato > .container {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 @media screen and (max-width: 850px) {
   .contato > .container {
@@ -157,13 +158,12 @@ header > .container > .logo {
 }
 
 .info-contato {
-  background-color: #e98750;
-  padding: 60px 30px;
+  padding: 50px 30px;
 }
 @media screen and (max-width: 850px) {
   .info-contato {
     width: 100%;
-    height: 400px;
+    height: auto;
   }
 }
 .box-info {
@@ -174,15 +174,14 @@ header > .container > .logo {
 }
 .box-info i {
   font-size: 25px;
-  color: #fff;
+  color: #000;
 }
 .box-info p {
-  color: #fff;
+  color: #000;
   font-size: 16px;
 }
 .icons-sociais {
   display: flex;
-
   gap: 30px;
 }
 .icons-sociais > .circ {
@@ -193,6 +192,11 @@ header > .container > .logo {
   margin: 80px 0;
   position: relative;
 }
+@media screen and (max-width: 850px) {
+  .icons-sociais > .circ {
+    margin: 40px 0;
+  }
+}
 .icons-sociais > .circ i {
   color: #fff;
   font-size: 20px;
@@ -202,6 +206,32 @@ header > .container > .logo {
   left: 50%;
 }
 
+/* Localiza */
+.localiza > .container {
+  padding: 40px 0;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .localiza > .container {
+    padding: 0px 0;
+  }
+}
+.localiza > .container a {
+  font-size: 20px;
+  border: 1px solid #16365e;
+  padding: 10px 20px;
+  border-radius: 9px;
+  color: #e98750;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  cursor: pointer;
+  transition: 1s;
+}
+.localiza > .container a:hover {
+  border: 1px solid #e98750;
+  transition: 1s;
+}
 /* Footer */
 footer {
   background-color: #16365e;
@@ -213,6 +243,9 @@ footer > .container {
   padding: 20px 5px;
 }
 @media screen and (max-width: 850px) {
+  footer {
+    margin-top: 30px;
+  }
   footer > .container {
     flex-direction: column;
   }
