@@ -188,9 +188,23 @@ header > .container > .logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #000000;
+  border: 1px solid #000;
   margin: 80px 0;
   position: relative;
+  cursor: pointer;
+}
+.icons-sociais > .circ:hover #whats i {
+  color: #25d366;
+  transition: 1s;
+}
+.icons-sociais > .circ:hover #instagram i {
+  color: #8134af;
+  transition: 1s;
+}
+.icons-sociais > .circ:hover #facebook i {
+  color: #3b5998;
+  transition: 1s;
 }
 @media screen and (max-width: 850px) {
   .icons-sociais > .circ {
@@ -218,7 +232,7 @@ header > .container > .logo {
 }
 .localiza > .container a {
   font-size: 20px;
-  border: 1px solid #16365e;
+  border: 1px solid #807f7f;
   padding: 10px 20px;
   border-radius: 9px;
   color: #e98750;
@@ -227,9 +241,14 @@ header > .container > .logo {
   display: inline-block;
   cursor: pointer;
   transition: 1s;
+  -webkit-box-shadow: 3px 4px 6px -3px rgba(135, 135, 135, 1);
+  -moz-box-shadow: 3px 4px 6px -3px rgba(135, 135, 135, 1);
+  box-shadow: 3px 4px 6px -3px rgba(135, 135, 135, 1);
 }
 .localiza > .container a:hover {
-  border: 1px solid #e98750;
+  border: 1px solid #000;
+  background-color: #e98750;
+  color: #fff;
   transition: 1s;
 }
 /* Footer */

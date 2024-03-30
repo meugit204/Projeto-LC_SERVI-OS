@@ -213,6 +213,9 @@ header > .container > .logo {
   margin: 20px 5px;
   display: inline-block;
   cursor: pointer;
+  -webkit-box-shadow: 3px 4px 6px -3px rgba(135, 135, 135, 1);
+  -moz-box-shadow: 3px 4px 6px -3px rgba(135, 135, 135, 1);
+  box-shadow: 3px 4px 6px -3px rgba(135, 135, 135, 1);
 }
 @media screen and (max-width: 415px) {
   .orcamento > .container a {
@@ -233,7 +236,9 @@ header > .container > .logo {
   }
 }
 .orcamento > .container a:hover {
-  border: 1px solid #16365e;
+  border: 1px solid #000;
+  background-color: #e98750;
+  color: #fff;
   transition: 1s;
 }
 /* Footer */
