@@ -22,43 +22,58 @@
     />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <div class="container">
+      <nav class="nav-bar">
         <div class="logo">
-          <a href="index.html"
-            ><img
-              src="imagens/logo2.webp"
-              alt="imagem da logo da empresa lc serviços"
-          /></a>
+          <a href="index.html"> <img src="imagens/logo.png" alt="" /></a>
         </div>
         <!--logo-->
-        <div class="menu">
+        <div class="nav-list">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-        <!--menu-->
-        <nav class="mobile">
-          <h3><i class="fa fa-bars"></i></h3>
-          <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li class="btn-nav">
-              <a
-                href="https://wa.me/5598985504245?text=Ola,+gostaria+de+solicitar+um+orçamento!😀"
-              >
-                Quero um Orçamento
-              </a>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="Serviços.html" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a href="contato.html" class="nav-link">Contato</a>
             </li>
           </ul>
-        </nav>
-        <!--mobile-->
+        </div>
+        <!--nav-list-->
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="imagens/menu-aberto.png" alt="" />
+          </button>
+        </div>
+        <!--mobile-menu-icon-->
+      </nav>
+      <!--nav-bar-->
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="Serviços.html" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://wa.me/5598985504245?text=Ola,+gostaria+de+solicitar+um+orçamento!😀"
+              class="nav-link orcamento-link"
+              >Quero um Orçamento</a
+            >
+          </li>
+        </ul>
       </div>
-      <!--container-->
+      <!--mobile-menu-->
     </header>
+    <!-- fim do header -->
     <div class="baner-chamada">
       <div class="container">
         <!--escurece o baner-->
@@ -81,20 +96,35 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+          <!--mapbox-->
         </div>
+        <!--maps-->
         <div class="info-contato w50">
           <div class="box-info">
             <i class="fa-solid fa-phone"></i>
             <p>(98) 98550-4245</p>
           </div>
+          <!--box-info-->
           <div class="box-info">
             <i class="fa-solid fa-envelope"></i>
-            <p>Lcservicoseng@Gmail.Com</p>
+            <p>lcservicoseng@gmail.com</p>
           </div>
+          <!--box-info-->
           <div class="box-info">
             <i class="fa-solid fa-location-dot"></i>
-            <p>Av Pres Medici/Africanos Nº 6, Sacavem, São Luís-Ma</p>
+            <p>
+              Av. Presidente Medici/Africanos Nº 6, Sacavem, <br />
+              São Luís - Ma
+            </p>
           </div>
+          <!--box-info-->
+          <div class="box-info">
+            <i class="fa-solid fa-clock"></i>
+            <p>
+              Segunda a Sexta: 08:00 as 18:00 <br />Sábado e Domingo: Fechado
+            </p>
+          </div>
+          <!--box-info-->
           <div class="icons-sociais">
             <div class="circ">
               <a
@@ -103,6 +133,7 @@
                 ><i class="fa-brands fa-whatsapp"></i
               ></a>
             </div>
+            <!--circ-->
             <div class="circ">
               <a
                 id="instagram"
@@ -110,15 +141,21 @@
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </div>
+            <!--circ-->
             <div class="circ">
-              <a id="facebook" href=""
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
+              <a id="email" href="https://mailto:lcservicoseng@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>
+              </a>
             </div>
+            <!--circ-->
           </div>
+          <!--icons-social-->
         </div>
+        <!--info-contato-->
       </div>
+      <!--container-->
     </section>
+    <!--contato-->
     <section class="localiza">
       <div class="container">
         <a
@@ -126,16 +163,18 @@
           >Solicitar Localização <span class="fa-brands fa-whatsapp"></span
         ></a>
       </div>
+      <!--container-->
     </section>
+    <!--localiza-->
     <footer>
       <div class="container">
         <div class="contato">
           <h3>Entrar em Contato</h3>
           <p>
-            Av pres medici/africanos nº 6, Sacavem,<br />
-            são luís-ma
+            Av. Presidente Medici/Africanos Nº 6, Sacavem,<br />
+            São Luís - Ma
           </p>
-          <p>lcservicoseng@gmail.com</p>
+          <p class="email">lcservicoseng@gmail.com</p>
           <p>(98) 98550-4245</p>
         </div>
         <!--contato-->
@@ -144,7 +183,7 @@
           <nav class="nav-footer">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="Serviços.html">Sobre</a></li>
               <li><a href="contato.html">Contato</a></li>
             </ul>
           </nav>
@@ -153,8 +192,8 @@
         <!--acesso-rapido-->
         <div class="horario">
           <h3>Horário de Funcionamento</h3>
-          <p>Segunda a sexta: 08:00 as 18:00</p>
-          <p>Sábado e domingo: Fechado</p>
+          <p>Segunda a Sexta: 08:00 as 18:00</p>
+          <p>Sábado e Domingo: Fechado</p>
         </div>
         <!--horario-->
       </div>
@@ -164,8 +203,7 @@
       </div>
       <!--direitos-->
     </footer>
-    <!-- jquery -->
-    <script src="js/jquery.js"></script>
+    <!--fim do footer-->
     <!-- function-menu -->
     <script src="js/menu.js"></script>
   </body>

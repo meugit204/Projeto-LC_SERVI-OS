@@ -24,100 +24,127 @@ body {
 .w50 {
   width: 50%;
 }
+
+/* Header */
 header {
-  width: 100%;
-  height: 90px;
   background-color: #fff;
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
 }
-header > .container {
+@media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+  }
+  .nav-bar {
+    padding: 0;
+  }
+}
+.nav-bar {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0rem;
+}
+.logo {
+  display: flex;
   align-items: center;
 }
-header > .container > .logo {
-  width: 248px;
-  height: 60px;
-}
-.container > .logo img {
-  width: 100%;
+.logo img {
+  width: 150px;
+  height: 50px;
   cursor: pointer;
 }
-.container > .menu ul {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.container > .menu ul li {
+.nav-list {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 860px) {
-  .container > .menu ul {
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav-item {
+  margin: 0 0px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #000;
+  font-weight: 400;
+}
+.orcamento-link {
+  border: 1px solid #16365e;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mobile-menu-icon {
+  display: none;
+}
+.icon {
+  width: 25px;
+  margin-bottom: 10px;
+}
+.mobile-menu {
+  display: none;
+  background-color: #fff;
+  transition: 1s;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 65px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 1rem 0.7rem;
+    align-items: center;
+    transition: 1s;
+  }
+  .nav-item {
     display: none;
   }
-}
-.menu ul li a {
-  color: #16365e;
-}
-.menu ul li:hover a {
-  color: #e98750;
-  transition: 1s;
-}
-/* menu mobile */
-.mobile {
-  display: none;
-  float: right;
-}
-@media screen and (max-width: 860px) {
-  .mobile {
+  .mobile-menu-icon {
     display: block;
   }
+  .mobile-menu-icon button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 2.2rem;
+  }
+  .mobile-menu .nav-link {
+    color: #16365e;
+  }
+  .open {
+    display: block;
+    transition: 1s;
+  }
 }
-.mobile h3 {
-  color: #000;
-  cursor: pointer;
-  font-size: 30px;
-  position: relative;
-  z-index: 2;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-.mobile ul {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 30px 0 30px 0;
-  top: 90px;
-  background-color: #16365e;
-  display: none;
-  text-align: center;
-}
-.mobile ul li {
-  padding: 10px 10px;
-}
-.mobile ul li a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  text-transform: capitalize;
-}
-.btn-nav {
-  border: 1px solid #e98750;
-  padding: 4px 20px;
-  border-radius: 10px;
-  display: inline-block;
-}
+/* fim do header */
 
 /* Baner - chamada */
 .baner-chamada > .container {
   height: 400px;
-  background-image: url(../imagens/bg-sobre2.webp);
+  background-image: url(../imagens/bg-servicos.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 @media screen and (max-width: 900px) {
   .baner-chamada > .container {
@@ -126,17 +153,10 @@ header > .container > .logo {
 }
 
 .baner-chamada > .container > .titulo-chamada {
-  max-width: 800px;
   color: #fff;
-  font-size: 60px;
-  margin-top: 30px;
-  padding: 30px;
-}
-@media screen and (max-width: 557px) {
-  .baner-chamada > .container > .titulo-chamada {
-    font-size: 40px;
-    margin-top: 60px;
-  }
+  font-size: 3rem;
+  text-transform: uppercase;
+  
 }
 
 /* Sobre */
@@ -160,29 +180,96 @@ header > .container > .logo {
   line-height: 25px;
 }
 
-/* Misao */
-.misao > .container {
-  background-color: #16365e;
-  padding: 30px 5px;
+/* nossoa serviços */
+.container-servico > .container {
   margin-top: 40px;
-  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.misao > .container h2 {
-  color: #fff;
-  font-size: 30px;
+@media (max-width: 1200px) {
+  .container-servico > .container {
+    padding: 0 1%;
+  }
+}
+.sericos-card,
+.sericos-card02 {
+  display: flex;
+  border: 1px solid #e2e5e7;
+  padding: 20px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 4px 4px -3px rgba(135, 135, 135, 1);
+  -moz-box-shadow: 3px 4px 4px -3px rgba(135, 135, 135, 1);
+  box-shadow: 3px 4px 4px -3px rgba(135, 135, 135, 1);
+}
+.sericos-card02 {
+  flex-direction: row-reverse;
+}
+@media (max-width: 967px) {
+  .sericos-card,
+  .sericos-card02 {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .sericos-card02 {
+    flex-direction: column-reverse;
+  }
+  .card-sobre,
+  .card-sobre02 {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.card h2 {
+  color: #16365e;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
   padding: 10px 0;
   text-transform: uppercase;
 }
-.misao > .container p {
-  color: #fff;
-  font-size: 15px;
+.card p {
+  color: #16365e;
+  font-size: 1rem;
   font-weight: normal;
-  padding: 10px 5px;
-  line-height: 25px;
+  margin-top: 20px;
+  line-height: 35px;
 }
-
+.card-sobre02 p {
+  padding-left: 40px;
+}
+@media (max-width: 967px) {
+  .card-sobre02 p {
+    padding-left: 0;
+  }
+}
+.card-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.card-img02 {
+  display: flex;
+  justify-content: flex-start;
+}
+.card-img img,
+.card-img02 img {
+  border-radius: 10px;
+  min-width: 350px;
+  width: 100%;
+}
+@media (max-width: 967px) {
+  .card-img,
+  .card-img02 {
+    width: 100%;
+    justify-content: center;
+  }
+  .card-img img,
+  .card-img02 img {
+    margin: 0 auto;
+    display: block;
+  }
+}
 /* Orcamento */
 .orcamento > .container {
   padding: 30px 5px;
@@ -267,7 +354,6 @@ footer > .container > .contato p {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
-  text-transform: capitalize;
   line-height: 25px;
 }
 .nav-footer ul li a {

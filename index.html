@@ -22,43 +22,37 @@
     />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <div class="container">
+      <nav class="nav-bar">
         <div class="logo">
-          <a href="index.html"
-            ><img
-              src="imagens/logo2.webp"
-              alt="imagem da logo da empresa lc serviços"
-          /></a>
-        </div>
-        <!--logo-->
-        <div class="menu">
+          <a href="index.html"> <img src="imagens/logo.png" alt="" /></a>
+        </div><!--logo-->
+        <div class="nav-list">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="Serviços.html" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
           </ul>
-        </div>
-        <!--menu-->
-        <nav class="mobile">
-          <h3><i class="fa fa-bars"></i></h3>
-          <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li class="btn-nav">
-              <a
-                href="https://wa.me/5598985504245?text=Ola,+gostaria+de+solicitar+um+orçamento!😀"
-              >
-                Quero um Orçamento
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!--mobile-->
-      </div>
-      <!--container-->
+        </div><!--nav-list-->
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="imagens/menu-aberto.png" alt="" />
+          </button>
+        </div><!--mobile-menu-icon-->
+      </nav><!--nav-bar-->
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="Serviços.html" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+          <li class="nav-item">
+            <a href="https://wa.me/5598985504245?text=Ola,+gostaria+de+solicitar+um+orçamento!😀" class="nav-link orcamento-link">Quero um Orçamento</a>
+          </li>
+        </ul>
+      </div><!--mobile-menu-->
     </header>
+    <!-- fim do header -->
     <div class="baner-chamada">
       <div class="container">
         <!--escurece o baner-->
@@ -74,7 +68,6 @@
       <!--container-->
     </div>
     <!--baner-chamada-->
-
     <section>
       <h2>MISSÃO, VISÃO E VALORES</h2>
       <div class="container">
@@ -135,30 +128,17 @@
     </section>
     <section>
       <div class="container">
-        <h2>NOSSOS SERVIÇOS</h2>
+        <h2>SOBRE NÓS</h2>
         <p>
-          <b
-            >A LC SERVIÇOS POSSUI EQUIPE PRÓPRIA COM ATUAÇÃO MULTIFOCAL,
-            COMPOSTA POR PROFISSIONAIS ESPECIALIZADOS QUE ATUAM NAS SEGUINTES
-            ÁREAS: </b
-          ><br />
-          <br />
-          PROJETOS E OBRAS DE CONSTRUÇÃO E REFORMA MULTISSERVIÇOS ENVOLVENDO AS
-          ENGENHARIAS ELÉTRICA, CIVIL, MECÂNICA, HIDRÁULICA E SOLUÇÕES
-          COMPLEMENTARES.
-          <br /><br />
-          MANUTENÇÃO ELÉTRICA, CIVIL E HIDRÁULICA PARA EMPRESAS E AGÊNCIAS
-          BANCÁRIAS.
-          <br /><br />
-
-          MANUTENÇÕES MULTISSERVIÇOS EMPLANTAS INDUSTRIAIS E PROJETOS ESPECIAIS
-          PARA GRANDES INDÚSTRIAS.
-          <br />
-          <br />INSTALAÇÕES ELÉTRICAS COMERCIAIS E INDUSTRIAIS EM ALTA OU BAIXA
-          TENSÃO. INSTALAÇÕES DE REDES LÓGICAS, DE TELEFONIA E CFTV.
-          <br /><br />
-          A LC SERVIÇOS TAMBÉM REALIZA TRABALHOS DE CONSULTORIA E PERÍCIA DE
-          FORMA PRECISA E ADEQUADA ÀS NECESSIDADES DOS CLIENTES.
+          A <b>LC SERVIÇOS</b> É UMA EMPRESA MODERNA INSPIRADA NAS MELHORES
+          PRÁTICAS CORPORATIVAS DO RAMO DE TERCEIRIZAÇÃO DE MÃO DE OBRA. ESTAMOS
+          EXPANDINDO NOSSOS NEGÓCIOS EM TODO MARANHÃO COM EFICIÊNCIA, TECNOLOGIA
+          E INOVAÇÃO. NOSSO MAIOR OBJETIVO É MANTER NOSSOS CLIENTES SATISFEITOS
+          E REALIZARMOS UMA LONGA PARCERIA COM RESPEITO MÚTUO. SOMOS UMA EQUIPE
+          ALTAMENTE QUALIFICADA, TREINADA E UNIFORMIZADA OQUE GARANTE
+          CONFIABILIDADE, CREDIBILIDADE NA PRESTAÇÃO DOS SERVIÇOS. OFERECEMOS
+          SEGURANÇA, COMODIDADE, PRATICIDADE, ÉTICA E ATENDIMENTO DIFERENCIADO
+          EM VÁRIOS CANAIS DE ATENDIMENTO.
         </p>
       </div>
       <!--container-->
@@ -185,17 +165,17 @@
     <!--regiao-->
     <section class="servicos">
       <div class="container">
-        <h2>MANUTENÇÃO PREDIAL E OBRAS CIVIS</h2>
+        <h2>NOSSOS SERVIÇOS</h2>
         <p>
-          A LC SERVIÇOS OFERECE SERVIÇOS A EMPRESAS QUE NÃO POSSUAM EQUIPES
-          PRÓPRIAS <b>PARA MANUTENÇÃO</b> E SERVIÇOS GERAIS. POR MEIO DE
+          <b>A LC SERVIÇOS OFERECE SERVIÇOS A EMPRESAS QUE NÃO POSSUAM EQUIPES
+          PRÓPRIAS PARA MANUTENÇÃO E SERVIÇOS GERAIS</b>. POR MEIO DE
           CONTRATOS DE SERVIÇOS OU TERCEIRIZAÇÃO DE MÃO-DE-OBRA, CONTRIBUÍMOS
           COM A OTIMIZAÇÃO DOS SERVIÇOS DE INFRAESTRUTURA NA MELHOR RELAÇÃO
           CUSTO/BENEFÍCIO PARA VOCÊ.
         </p>
         <a
-          href="https://wa.me/5598985504245?text=Ola,+gostaria+de+solicitar+um+orçamento!😀"
-          >Solicitar Orçamento</a
+          href="Serviços.html"
+          >Saiba mais &#8250 &#8250 &#8250;</a
         >
       </div>
       <!--container-->
@@ -206,10 +186,10 @@
         <div class="contato">
           <h3>Entrar em Contato</h3>
           <p>
-            Av pres medici/africanos nº 6, Sacavem,<br />
-            são luís-ma
+            Av. Presidente Medici/Africanos Nº 6, Sacavem,<br />
+            São Luís - Ma
           </p>
-          <p>lcservicoseng@gmail.com</p>
+          <p class="email">lcservicoseng@gmail.com</p>
           <p>(98) 98550-4245</p>
         </div>
         <!--contato-->
@@ -218,7 +198,7 @@
           <nav class="nav-footer">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="Serviços.html">Serviços</a></li>
               <li><a href="contato.html">Contato</a></li>
             </ul>
           </nav>
@@ -227,8 +207,8 @@
         <!--acesso-rapido-->
         <div class="horario">
           <h3>Horário de Funcionamento</h3>
-          <p>Segunda a sexta: 08:00 as 18:00</p>
-          <p>Sábado e domingo: Fechado</p>
+          <p>Segunda a Sexta: 08:00 as 18:00</p>
+          <p>Sábado e Domingo: Fechado</p>
         </div>
         <!--horario-->
       </div>
@@ -238,8 +218,7 @@
       </div>
       <!--direitos-->
     </footer>
-    <!-- jquery -->
-    <script src="js/jquery.js"></script>
+    <!-- fim do footer-->
     <!-- function-menu -->
     <script src="js/menu.js"></script>
   </body>
